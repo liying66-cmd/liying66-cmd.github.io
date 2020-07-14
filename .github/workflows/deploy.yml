@@ -1,4 +1,4 @@
-name: scrrs deployer # Actions 名字
+name: liying66-cmd deployer # Actions 名字
 
 on: 
   push:
