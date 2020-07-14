@@ -38,6 +38,6 @@ jobs:
           git config user.email "liying66.cmd@gmail.com"
           git add .
           git commit -m "自动部署"
-          git push --quiet "https://${GH_TOKEN}@${GH_REP}" master:master
+          git push --force --quiet "https://${GH_TOKEN}@${GH_REP}" master:master
 
     
