@@ -3,7 +3,7 @@ name: scrrs deployer # Actions 名字
 on: 
   push:
     branches:
-      - vue
+      - source
 
 jobs:
   build: 
