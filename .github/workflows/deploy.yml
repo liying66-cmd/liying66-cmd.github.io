@@ -1,0 +1,43 @@
+name: scrrs deployer # Actions 名字
+
+on: 
+  push:
+    branches:
+      - vue
+
+jobs:
+  build: 
+    name: Build and publish
+    runs-on: ubuntu-latest 
+
+    steps:
+      - uses: actions/checkout@v1
+
+      - name: Use Node.js 10.x
+        uses: actions/setup-node@v1
+        with:
+          node-version: 10.x
+
+      - name: Setup Environmental Science 
+        run: |
+           npm install -g vuepress
+           npm install
+
+      - name: Generate public files 
+        run: |
+          npm run build 
+
+      - name: Deploy
+        env: 
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+          GH_REP: ${{ secrets.GH_REP }}
+        run: |
+          cd ./public
+          git init
+          git config user.name "liying66-cmd"
+          git config user.email "liying66.cmd@gmail.com"
+          git add .
+          git commit -m "自动部署"
+          git push --quiet "https://${GH_TOKEN}@${GH_REP}" master:master
+
+    
