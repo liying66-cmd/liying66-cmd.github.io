@@ -47,7 +47,7 @@ module.exports = {
         "items": [
           {
             "text": "GitHub",
-            "link": "https://github.com/recoluan",
+            "link": "https://github.com/recoluan",//这个就可以换成你的
             "icon": "reco-github"
           }
         ]
@@ -72,7 +72,7 @@ module.exports = {
         "text": "Tag"
       }
     },
-    "friendLink": [
+    "friendLink": [//这部分友链可以添加也可以删除
       {
         "title": "午后南杂",
         "desc": "Enjoy when you can, and endure when you must.",
