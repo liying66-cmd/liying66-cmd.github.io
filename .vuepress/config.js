@@ -42,15 +42,15 @@ module.exports = {
         ]
       },
       {
-        "text": "Contact",//实现页面跳转
+        "text": "Contact",//联系（实现页面跳转）
         "icon": "reco-message",
         "items": [
           {
-            "text": "GitHub",
-            "link": "https://github.com/recoluan",//这个就可以换成你的
-            "icon": "reco-github",
             "text": "CSDN",
             "link": "http://www.csdn.net/",
+            "icon": "reco-github",
+            "text": "GitHub",
+            "link": "https://github.com/github",//这个就可以换成你的
             "icon": "reco-github"
           }
         ]
@@ -99,9 +99,7 @@ module.exports = {
 </ul>
 
 </div>
-<style>
-  
-</style>
+
 
 
     ],
