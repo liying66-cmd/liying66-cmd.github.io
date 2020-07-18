@@ -1,33 +1,33 @@
 module.exports = {
-  "title": "",
-  "description": "",
+  "title": "",//显示在左上角的网页名称以及首页在浏览器标签显示的title名称
+  "description": "liying-cmd's Blog",//meta中的描述文字，用于SEO
   "dest": "public",
   "head": [
     [
       "link",
       {
         "rel": "icon",
-        "href": "/favicon.ico"
+        "href": "/favicon.ico"//浏览器的标签栏的网页图标，基地址/docs/.vuepress/public
       }
     ],
     [
       "meta",
       {
         "name": "viewport",
-        "content": "width=device-width,initial-scale=1,user-scalable=no"
+        "content": "width=device-width,initial-scale=1,user-scalable=no"//在移动端，搜索框在获得焦点时会放大
       }
     ]
   ],
-  "theme": "reco",
+  "theme": "reco",//选择主题'reco'
   "themeConfig": {
-    "nav": [
+    "nav": [//导航栏设置
       {
-        "text": "Home",
+        "text": "Home",//主页
         "link": "/",
         "icon": "reco-home"
       },
       {
-        "text": "TimeLine",
+        "text": "TimeLine",//时间线
         "link": "/timeline/",
         "icon": "reco-date"
       },
@@ -42,12 +42,15 @@ module.exports = {
         ]
       },
       {
-        "text": "Contact",
+        "text": "Contact",//实现页面跳转
         "icon": "reco-message",
         "items": [
           {
             "text": "GitHub",
             "link": "https://github.com/recoluan",//这个就可以换成你的
+            "icon": "reco-github",
+            "text": "CSDN",
+            "link": "http://www.csdn.net/",
             "icon": "reco-github"
           }
         ]
@@ -73,29 +76,46 @@ module.exports = {
       }
     },
     "friendLink": [//这部分友链可以添加也可以删除
-      {
-        "title": "午后南杂",
-        "desc": "Enjoy when you can, and endure when you must.",
-        "email": "1156743527@qq.com",
-        "link": "https://www.recoluan.com"
-      },
-      {
-        "title": "vuepress-theme-reco",
-        "desc": "A simple and beautiful vuepress Blog & Doc theme.",
-        "avatar": "https://vuepress-theme-reco.recoluan.com/icon_vuepress_reco.png",
-        "link": "https://vuepress-theme-reco.recoluan.com"
-      }
+      
+      <div class="page-friends page-common">
+<div class="link-title wow rollIn animated" style="visibility: visible; animation-name: rollIn;">博客友链</div>
+<ul class="readers-list clearfix">
+
+<li class="wow slideInUp animated" style="visibility: visible; animation-name: slideInUp;"><a rel="colleague" title="推荐好友" target="_blank" href="https://srcrs.top/"><div>srcrs</div><div>Happy Coding , Happy Life</div></a></li>
+
+</ul>
+
+<div class="link-title wow rollIn animated" style="visibility: visible; animation-name: rollIn;">学习教程</div>
+<ul class="readers-list clearfix">
+
+<li class="wow slideInUp animated" style="visibility: visible; animation-name: slideInUp;"><a rel="" title="学的不仅是技术，更是梦想" target="_blank" href="http://www.runoob.com/"><div>菜鸟教程</div><div>学的不仅是技术，更是梦想</div></a></li>
+
+<li class="wow slideInUp animated" style="visibility: visible; animation-name: slideInUp;"><a rel="" title="CSDN学院" target="_blank" href="http://www.csdn.net/"><div>Layui</div><div>CSDN学院</div></a></li>
+
+<li class="wow slideInUp animated" style="visibility: visible; animation-name: slideInUp;"><a rel="" title="在线学习教程" target="_blank" href="http://www.w3school.com.cn/"><div>w3school</div><div>在线学习教程</div></a></li>
+
+<li class="wow slideInUp animated" style="visibility: visible; animation-name: slideInUp;"><a rel="" title="编程实战训练" target="_blank" href="https://www.w3cschool.cn/"><div>w3cschool</div><div>编程实战训练</div></a></li>
+
+</ul>
+
+</div>
+<style>
+  
+</style>
+
+
     ],
     "logo": "/logo.png",
     "search": true,
     "searchMaxSuggestions": 10,
-    "lastUpdated": "Last Updated",
+    "lastUpdated": "最后更新时间",
     "author": "",
-    "authorAvatar": "/avatar.png",
+    "authorAvatar": "/author.png",//作者头像
     "record": "xxxx",
-    "startYear": "2017"
+    "startYear": "2017"//项目开始年份
   },
   "markdown": {
-    "lineNumbers": true
-  }
+    "lineNumbers": true//代码显示行号
+  },
+    
 }

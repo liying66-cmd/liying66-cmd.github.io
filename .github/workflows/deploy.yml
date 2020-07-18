@@ -1,7 +1,6 @@
 name: liying66-cmd deployer # Actions 名字
 
-on: 
-  push:
+on: push:
     branches:
       - source
 
