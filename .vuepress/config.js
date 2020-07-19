@@ -52,7 +52,7 @@ module.exports = {
       }
     ],
    
-    "sidebar": 'auto',
+    "sidebar":
     [//在所有页面中启用自动生成侧栏
       {
       "/docs/theme-reco/": [
@@ -61,25 +61,29 @@ module.exports = {
         "plugin",
         "api"
       ],
-    },
-    {
-      title:'开发指南',
-      collapsable:false//是否展开
-    },
-    [
-      './guide/install/install','安装'
+      },
+      {
+        title:'开发指南',
+        collapsable:false//是否展开
+      },
+      [
+        './guide/install/install','安装'
+      ],
+      [
+        './guide/started/startede','快速上手'
+      ],
+  
+      {
+        title:'组件',
+        collapsable:false
+      },
+      [
+        './guide/icon/icon','icon'
+      ],
     ],
-    [
-      './guide/started/startede','快速上手'
-    ],
-    {
-      title:'组件',
-      collapsable:false
-    },
-    [
-      './guide/icon/icon','icon'
-    ],
-  ],
+
+    
+  
 
     "type": "blog",
     "blogConfig": {
