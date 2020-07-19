@@ -22,9 +22,7 @@ module.exports = {
   "themeConfig": {
     "nav": [//导航栏设置
       {
-        "text": "Home",//主页
-        "link": "/",
-        "icon": "reco-home"
+        "text": "Home","link": "/","icon": "reco-home"
       },
       {
         "text": "TimeLine",//时间线
@@ -44,26 +42,45 @@ module.exports = {
       {
         "text": "Contact",//联系（实现页面跳转）
         "icon": "reco-message",
-        "items": [
+        "items": [//多个link以下拉列表的形式显示
           {
-            "text": "CSDN",
-            "link": "http://www.csdn.net/",
-            "icon": "reco-github",
-            "text": "GitHub",
-            "link": "https://github.com/github",//这个就可以换成你的
-            "icon": "reco-github"
+            "text": "CSDN","link": "http://www.csdn.net/", "icon": "reco-CSDN",
+            "text": "GitHub","link": "https://github.com/github", "icon": "reco-github",
+            "text":"博客友联","link":"https://srcrs.top/","icon":"friend'blog"
           }
         ]
       }
     ],
-    "sidebar": {
+   
+    "sidebar": 'auto',
+    [//在所有页面中启用自动生成侧栏
+      {
       "/docs/theme-reco/": [
         "",
         "theme",
         "plugin",
         "api"
-      ]
+      ],
     },
+    {
+      title:'开发指南',
+      collapsable:false//是否展开
+    },
+    [
+      './guide/install/install','安装'
+    ],
+    [
+      './guide/started/startede','快速上手'
+    ],
+    {
+      title:'组件',
+      collapsable:false
+    },
+    [
+      './guide/icon/icon','icon'
+    ],
+  ],
+
     "type": "blog",
     "blogConfig": {
       "category": {
@@ -75,34 +92,8 @@ module.exports = {
         "text": "Tag"
       }
     },
-    "friendLink": [//这部分友链可以添加也可以删除
-      
-      <div class="page-friends page-common">
-<div class="link-title wow rollIn animated" style="visibility: visible; animation-name: rollIn;">博客友链</div>
-<ul class="readers-list clearfix">
+   
 
-<li class="wow slideInUp animated" style="visibility: visible; animation-name: slideInUp;"><a rel="colleague" title="推荐好友" target="_blank" href="https://srcrs.top/"><div>srcrs</div><div>Happy Coding , Happy Life</div></a></li>
-
-</ul>
-
-<div class="link-title wow rollIn animated" style="visibility: visible; animation-name: rollIn;">学习教程</div>
-<ul class="readers-list clearfix">
-
-<li class="wow slideInUp animated" style="visibility: visible; animation-name: slideInUp;"><a rel="" title="学的不仅是技术，更是梦想" target="_blank" href="http://www.runoob.com/"><div>菜鸟教程</div><div>学的不仅是技术，更是梦想</div></a></li>
-
-<li class="wow slideInUp animated" style="visibility: visible; animation-name: slideInUp;"><a rel="" title="CSDN学院" target="_blank" href="http://www.csdn.net/"><div>Layui</div><div>CSDN学院</div></a></li>
-
-<li class="wow slideInUp animated" style="visibility: visible; animation-name: slideInUp;"><a rel="" title="在线学习教程" target="_blank" href="http://www.w3school.com.cn/"><div>w3school</div><div>在线学习教程</div></a></li>
-
-<li class="wow slideInUp animated" style="visibility: visible; animation-name: slideInUp;"><a rel="" title="编程实战训练" target="_blank" href="https://www.w3cschool.cn/"><div>w3cschool</div><div>编程实战训练</div></a></li>
-
-</ul>
-
-</div>
-
-
-
-    ],
     "logo": "/logo.png",
     "search": true,
     "searchMaxSuggestions": 10,
@@ -110,7 +101,7 @@ module.exports = {
     "author": "",
     "authorAvatar": "/author.png",//作者头像
     "record": "xxxx",
-    "startYear": "2017"//项目开始年份
+    "startYear": "2020"//项目开始年份
   },
   "markdown": {
     "lineNumbers": true//代码显示行号
