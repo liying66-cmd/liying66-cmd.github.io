@@ -44,9 +44,7 @@ module.exports = {
         "icon": "reco-message",
         "items": [//多个link以下拉列表的形式显示
           {
-            "text": "CSDN","link": "http://www.csdn.net/", "icon": "reco-CSDN",
-            "text": "GitHub","link": "https://github.com/github", "icon": "reco-github",
-            "text":"博客友联","link": "https://srcrs.top/","icon":"friend's blog"
+            "text": "GitHub","link": "https://github.com/liying66-cmd/liying66-cmd.github.io", "icon": "reco-github"
           }
         ]
       }
@@ -62,7 +60,6 @@ module.exports = {
         "api"
       ]
       },
-    
     "type": "blog",
     "blogConfig": {
       "category": {
@@ -74,8 +71,20 @@ module.exports = {
         "text": "Tag"
       }
     },
-   
-
+    "friendLink": [
+      {
+        "title": "CSDN",
+        "desc": "程序员社区",
+        "avatar": "reco-CSDN",
+        "link": "http://www.csdn.net/"
+      },
+      {
+        "title": "srcrs",
+        "desc": "A whole place about me",
+        "avatar": "https://srcrs.top/assets/img/head.svg",
+        "link": "https://srcrs.top"
+      }
+    ],
     "logo": "/logo.png",
     "search": true,
     "searchMaxSuggestions": 10,
