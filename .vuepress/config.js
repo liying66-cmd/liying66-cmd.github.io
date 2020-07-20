@@ -81,6 +81,7 @@ module.exports = {
       {
         "title": "srcrs",
         "desc": "A whole place about me",
+        "elmail": "srcrs@foxmail.com",
         "avatar": "https://srcrs.top/assets/img/head.svg",
         "link": "https://srcrs.top"
       }
