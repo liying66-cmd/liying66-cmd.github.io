@@ -46,45 +46,23 @@ module.exports = {
           {
             "text": "CSDN","link": "http://www.csdn.net/", "icon": "reco-CSDN",
             "text": "GitHub","link": "https://github.com/github", "icon": "reco-github",
-            "text":"博客友联","link":"https://srcrs.top/","icon":"friend'blog"
+            "text":"博客友联","link": "https://srcrs.top/","icon":"friend's blog"
           }
         ]
       }
     ],
    
     "sidebar":
-    [//在所有页面中启用自动生成侧栏
+    //在所有页面中启用自动生成侧栏
       {
       "/docs/theme-reco/": [
         "",
         "theme",
         "plugin",
         "api"
-      ],
+      ]
       },
-      {
-        title:'开发指南',
-        collapsable:false//是否展开
-      },
-      [
-        './guide/install/install','安装'
-      ],
-      [
-        './guide/started/startede','快速上手'
-      ],
-  
-      {
-        title:'组件',
-        collapsable:false
-      },
-      [
-        './guide/icon/icon','icon'
-      ],
-    ],
-
     
-  
-
     "type": "blog",
     "blogConfig": {
       "category": {
