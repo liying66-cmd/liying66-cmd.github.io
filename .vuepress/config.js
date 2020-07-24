@@ -6,10 +6,16 @@ module.exports = {
     [
       "link",
       {
-        "rel": "icon",
-        "href": "/favicon.ico"//浏览器的标签栏的网页图标，基地址/docs/.vuepress/public
+        "rel": "icon", "href": "/favicon.ico"//浏览器的标签栏的网页图标，基地址/docs/.vuepress/public
+      },
+      {
+        "rel": "stylesheet", "href": "https://cdn.jsdelivr.net/npm/kate@0.11.1/dist/katex.min.css",
       }
     ],
+    [
+      "script",{ "src": "scripts/demo.js" }
+    ]
+
     [
       "meta",
       {
@@ -56,9 +62,14 @@ module.exports = {
     ],
     
    
-    "sidebar":auto,
+    "sidebar":
     //在所有页面中启用自动生成侧栏
-      
+      {"/docs/theme-reco/": ["",
+      "theme",
+      "plugin",
+      "api"
+      ]
+      },
     
     "type": "blog",
     "blogConfig": {
