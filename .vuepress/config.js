@@ -96,7 +96,7 @@ module.exports = {
     "author": "",
     "authorAvatar": "/author.png",//作者头像
     "record": "xxxx",
-    "startYear": "2020"//项目开始年份
+    "startYear": "2020"
   },
   "markdown": {
     "lineNumbers": true//代码显示行号
