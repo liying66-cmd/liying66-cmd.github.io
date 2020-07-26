@@ -85,8 +85,7 @@ module.exports = {
     {"title": " srcrs", "desc": "关于我的整个地方","email": "srcrs@foxmail.com",
      "avatar": "https://srcrs.top/assets/img/head.svg",
      "link": "https://srcrs.top"
-    },
-    
+    }
     ],
 
     "logo": "/logo.png",

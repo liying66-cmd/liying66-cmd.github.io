@@ -1,7 +1,7 @@
 ---
 home: true
 heroText: big big World
-tagline(标语):just try your best!
+tagline(标语): just try your best!
 # heroImage: /hero.png
 # heroImageStyle: {
 #   maxWidth: '600px',
